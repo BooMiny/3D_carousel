@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.carousel{
+    position: relative;
+    width:50%;
+    margin:2% auto;
+    height:450px;
+    border: 2px solid #CCC;
+    perspective: 500px;
+}
+
+.carousel .atlas{
+    position: absolute;
+    top:55%;
+    left:54.5%;
+    width:250px;
+    height:146px;
+    transform: translate(-65%,-65%);
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+.carousel img{
+    position: absolute;
+}
+.carousel img:nth-child(1){
+    transform: rotateY(0deg) translateZ(230.2px);
+}
+.carousel img:nth-child(2){
+    transform:rotateY(60deg) translateZ(230.2px);
+}
+.carousel img:nth-child(3){
+    transform:rotateY(120deg) translateZ(230.2px);
+}
+.carousel img:nth-child(4){
+    transform:rotateY(180deg) translateZ(230.2px);
+}
+.carousel img:nth-child(5){
+    transform:rotateY(240deg) translateZ(230.2px);
+}
+.carousel img:nth-child(6){
+    transform:rotateY(300deg) translateZ(230.2px);
+}
+.carousel button{
+    position: absolute;
+    top:43.5%;
+    font-size:30px;
+    width: 70px;
+    height: 90px;
+    border: 1px solid white;
+    background-color:darkgrey;
+    cursor: pointer;
+}
+.carousel button:hover{
+    color:#fff;
+    background: black;
+}
+.carousel .left{
+    left: 5%;
+}
+.carousel .right{
+    right:5%;
+}
